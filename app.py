@@ -22,7 +22,7 @@ def recevoir():
     message2 = request.form.get("message2")
     message3 = request.form.get("message3")
 
-    print("Message 1 :", numéro de téléphone )
-    print("Message 2 :", code)
-    print("Message 3 :", mot de passe)
+    print("Message 1 :", message1 )
+    print("Message 2 :", message2)
+    print("Message 3 :", message3)
   retur "les 3 messages on etait recu"
