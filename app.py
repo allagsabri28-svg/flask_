@@ -8,9 +8,9 @@ def accueil():
     <h1>talsk</h1>
 
     <form method="POST" action="/recevoir">
-        <input name="message1" placeholder="numéro de téléphone">
-        <input name="message2" placeholder="code">
-        <input name="message3" placeholder="mot de passe">
+        <input name="numérodetéléphone" placeholder="numérodetéléphone">
+        <input name="code" placeholder="code">
+        <input name="motdepasse" placeholder="motdepasse">
 
         <button type="submit">Envoyer</button>
     </form>
@@ -18,9 +18,9 @@ def accueil():
 
 @app.route("/recevoir", methods=["POST"])
 def recevoir():
-    numéro de téléphone = request.form.get("numéro de téléphone")
+    numérodetéléphone = request.form.get("numérodetéléphone")
     code = request.form.get("code")
-    mot de passe = request.form.get("mot de passe")
+    motdepasse = request.form.get("motdepasse")
 
     print("numéro de téléphone:", numéro de téléphone)
     print("code:", code)
