@@ -1,1 +1,28 @@
+from flask import Flask, request
 
+app = Flask(__name__)
+
+@app.route("/")
+def accueil():
+    return """
+    <h1>talsk</h1>
+
+    <form method="POST" action="/recevoir">
+        <input name="message1" placeholder="numéro de téléphone ">
+        <input name="message2" placeholder="code">
+        <input name="message3" placeholder=" mot de passe ">
+
+        <button type="submit">Envoyer</button>
+    </form>
+    """
+
+@app.route("/recevoir", methods=["POST"])
+def recevoir():
+    message1 = request.form.get("message1")
+    message2 = request.form.get("message2")
+    message3 = request.form.get("message3")
+
+    print("Message 1 :", numéro de téléphone )
+    print("Message 2 :", code)
+    print("Message 3 :", mot de passe)
+  retur "les 3 messages on etait recu"
