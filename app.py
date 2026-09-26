@@ -22,8 +22,8 @@ def recevoir():
     message2 = request.form.get("message2")
     message3 = request.form.get("message3")
 
-    print("Message 1 :", message1 )
+    print("Message 1 :", message1)
     print("Message 2 :", message2)
     print("Message 3 :", message3)
     
-  retur "les 3 messages on etait recu"
+    retur "les 3 messages on etait recu"
