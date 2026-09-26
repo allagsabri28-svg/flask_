@@ -18,12 +18,12 @@ def accueil():
 
 @app.route("/recevoir", methods=["POST"])
 def recevoir():
-    message1 = request.form.get("numéro de téléphone")
-    message2 = request.form.get("code")
-    message3 = request.form.get("mot de passe")
+    message1 = request.form.get("message1")
+    message2 = request.form.get("message2")
+    message3 = request.form.get("message3")
 
-    print("Message 1 :", numéro de téléphone)
-    print("Message 2 :", code)
-    print("Message 3 :", mot de passe)
+    print("Message 1 :", message1)
+    print("Message 2 :", message2)
+    print("Message 3 :", message3)
     
     return "les 3 messages on etait recu"
