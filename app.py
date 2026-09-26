@@ -8,9 +8,9 @@ def accueil():
     <h1>talsk</h1>
 
     <form method="POST" action="/recevoir">
-        <input name="message1" placeholder="numéro de téléphone ">
-        <input name="message2" placeholder="code">
-        <input name="message3" placeholder=" mot de passe ">
+        <input name="message1" placeholder="message1">
+        <input name="message2" placeholder="message2">
+        <input name="message3" placeholder="message3">
 
         <button type="submit">Envoyer</button>
     </form>
